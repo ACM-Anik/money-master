@@ -66,7 +66,7 @@ document.getElementById('calculate').addEventListener('click', function(){
         previousSavings.innerText = newSavings;
         
         const remainingBalance = document.getElementById('remaining-balance');
-        remainingBalance.innerText = newBalance - newSavings;
+        remainingBalance.innerText = (newBalance - newSavings).toFixed(2);
          // console.log(newSavings);
     });
 });
